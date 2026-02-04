@@ -2,8 +2,9 @@
 
 ### Strategic Workforce Analytics using Machine Learning
 
-[![Google Advanced Data Analytics](https://img.shields.io/badge/Google-Advanced_Data_Analytics_Certificate-4285F4?style=for-the-badge&logo=google&logoColor=white)]([https://www.coursera.org/professional-certificates/google-advanced-data-analytics](https://www.coursera.org/account/accomplishments/professional-cert/4TAGPANB8CD8))
+[![Google Advanced Data Analytics](https://img.shields.io/badge/Google-Advanced_Data_Analytics_Certificate-4285F4?style=for-the-badge&logo=google&logoColor=white)]
 [![Capstone Project](https://img.shields.io/badge/Capstone-Final_Project-success?style=for-the-badge)](https://www.coursera.org/professional-certificates/google-advanced-data-analytics)
+[![Verify Certificate](https://img.shields.io/badge/Verify-My_Certificate-blue?style=for-the-badge&logo=coursera&logoColor=white)](https://www.coursera.org/account/accomplishments/professional-cert/4TAGPANB8CD8)
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0+-orange.svg)](https://scikit-learn.org)
@@ -221,7 +222,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- **[Google Advanced Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-advanced-data-analytics)** - This capstone project was completed as the final requirement for the 7-course certificate program, which covers foundations of data science, statistics, Python, regression analysis, and machine learning.
+- **[Google Advanced Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-advanced-data-analytics)** - This capstone project was completed as the final requirement for the 7-course certificate program, which covers foundations of data science, statistics, Python, regression analysis, and machine learning. [View my certificate](https://www.coursera.org/account/accomplishments/professional-cert/4TAGPANB8CD8)
 - **Kaggle** - For providing the HR Analytics dataset
 - **Anthropic Claude** - AI assistance for code refactoring and documentation
 
