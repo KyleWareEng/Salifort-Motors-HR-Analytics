@@ -2,7 +2,7 @@
 
 ### Strategic Workforce Analytics using Machine Learning
 
-[![Google Advanced Data Analytics](https://img.shields.io/badge/Google-Advanced_Data_Analytics_Certificate-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://www.coursera.org/professional-certificates/google-advanced-data-analytics)
+[![Google Advanced Data Analytics](https://img.shields.io/badge/Google-Advanced_Data_Analytics_Certificate-4285F4?style=for-the-badge&logo=google&logoColor=white)]([https://www.coursera.org/professional-certificates/google-advanced-data-analytics](https://www.coursera.org/account/accomplishments/professional-cert/4TAGPANB8CD8))
 [![Capstone Project](https://img.shields.io/badge/Capstone-Final_Project-success?style=for-the-badge)](https://www.coursera.org/professional-certificates/google-advanced-data-analytics)
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
