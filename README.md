@@ -1,30 +1,22 @@
 # Salifort Motors: Predictive Employee Turnover Modeling
 
-### Strategic Workforce Analytics using Machine Learning
-
-![Google Advanced Data Analytics](https://img.shields.io/badge/Google-Advanced_Data_Analytics_Certificate-4285F4?style=for-the-badge&logo=google&logoColor=white)
-[![Capstone Project](https://img.shields.io/badge/Capstone-Final_Project-success?style=for-the-badge)](https://www.coursera.org/professional-certificates/google-advanced-data-analytics)
-[![Verify Certificate](https://img.shields.io/badge/Verify-My_Certificate-blue?style=for-the-badge&logo=coursera&logoColor=white)](https://www.coursera.org/account/accomplishments/professional-cert/4TAGPANB8CD8)
-
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0+-orange.svg)](https://scikit-learn.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
----
+A machine learning solution to predict employee turnover and enable proactive HR interventions - completed as the capstone project for the [Google Advanced Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-advanced-data-analytics).
 
-> **Google Advanced Data Analytics Professional Certificate - Capstone Project**
-> 
-> This project is the final capstone for the [Google Advanced Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-advanced-data-analytics) on Coursera. It demonstrates end-to-end data science skills including exploratory data analysis, statistical modeling, machine learning, and stakeholder communication using the **PACE framework** (Plan, Analyze, Construct, Execute).
+![Burnout Cluster Analysis](figures/burnout_cluster.png)
 
 ---
 
 ## Executive Summary
 
-Employee turnover costs companies **50-200% of an employee's annual salary** in recruitment, training, and lost productivity. This project addresses this critical business challenge for Salifort Motors by developing a machine learning solution to identify at risk employees before they resign.
+Employee turnover costs companies **50-200% of an employee's annual salary** in recruitment, training, and lost productivity. This project addresses this critical business challenge for Salifort Motors by developing a machine learning solution to identify at-risk employees before they resign.
 
-**The final Random Forest model achieved 92.5% Recall**, enabling HR to proactively intervene with high performing individuals *before* they leave potentially saving hundreds of thousands in annual recruitment costs.
+**The final Random Forest model achieved 92.5% Recall**, enabling HR to proactively intervene with high-performing individuals *before* they leave — potentially saving hundreds of thousands in annual recruitment costs.
 
-### Key Results at a Glance
+### Key Results
 
 | Metric | Value |
 |--------|-------|
@@ -35,13 +27,11 @@ Employee turnover costs companies **50-200% of an employee's annual salary** in 
 
 ---
 
-## Key Insights & Visualizations
+## Key Insights & Visualisations
 
 ### 1. The Burnout Cluster
 
-A critical discovery: **high performing employees working 250+ hours/month are leaving at alarming rates**, even with strong evaluation scores. This "burnout cluster" represents the company's most valuable talent silently burning out.
-
-![Burnout Cluster Analysis](figures/burnout_cluster.png)
+A critical discovery: **high-performing employees working 250+ hours/month are leaving at alarming rates**, even with strong evaluation scores. This "burnout cluster" represents the company's most valuable talent silently burning out.
 
 ### 2. Feature Importance: What Drives Turnover?
 
@@ -55,9 +45,9 @@ The Random Forest model identified the top predictors of employee attrition:
 
 ![Feature Importance](figures/feature_importance.png)
 
-### 3. Model Performance: Confusion Matrix
+### 3. Model Performance
 
-The Random Forest model correctly identifies the vast majority of at risk employees while maintaining high precision (few false alarms).
+The Random Forest model correctly identifies the vast majority of at-risk employees while maintaining high precision (few false alarms).
 
 ![Confusion Matrix](figures/confusion_matrix.png)
 
@@ -82,17 +72,17 @@ This project follows the **PACE** methodology taught in the Google Advanced Data
 ### 1. Plan
 - **Stakeholder Alignment:** Identified HR and Executive Leadership as primary stakeholders
 - **Goal Setting:** Predict employee churn (binary classification) to improve retention rates
-- **Ethics & Privacy:** Established guardrails ensuring predictions support employees rather than penalize them
+- **Ethics & Privacy:** Established guardrails ensuring predictions support employees rather than penalise them
 
-### 2. Analyze (EDA)
-- **Data Cleaning:** Removed 3,008 duplicate entries and standardized column names
-- **Outlier Analysis:** Identified 824 tenure outliers representing long tenured employees
-- **Key Discovery:** Found the "Burnout Cluster"—high performers working excessive hours who are leaving
+### 2. Analyse (EDA)
+- **Data Cleaning:** Removed 3,008 duplicate entries and standardised column names
+- **Outlier Analysis:** Identified 824 tenure outliers representing long-tenured employees
+- **Key Discovery:** Found the "Burnout Cluster" — high performers working excessive hours who are leaving
 
-### 3. Construct (Modeling)
+### 3. Construct (Modelling)
 - **Baseline Model:** Logistic Regression achieved only 18.3% Recall (missed 82% of leavers)
 - **Champion Model:** Random Forest captured non-linear patterns with 92.5% Recall
-- **Metric Priority:** Focused on Recall and F1-Score to minimize false negatives
+- **Metric Priority:** Focused on Recall and F1-Score to minimise false negatives
 
 ### 4. Execute (Recommendations)
 Delivered actionable insights to HR leadership (see Business Recommendations below)
@@ -123,6 +113,17 @@ Based on the model's findings, I recommend the following interventions:
 
 ---
 
+## What I Learned
+
+- Structuring a data science project using the PACE framework
+- The importance of choosing the right evaluation metric (Recall vs Accuracy) based on business context
+- How to translate technical findings into actionable business recommendations
+- Feature engineering and handling class imbalance in classification problems
+- Communicating insights effectively to non-technical stakeholders
+- Leveraging AI tools to accelerate development while maintaining code quality
+
+---
+
 ## Technical Stack
 
 | Category | Tools |
@@ -130,46 +131,38 @@ Based on the model's findings, I recommend the following interventions:
 | **Language** | Python 3.8+ |
 | **Data Manipulation** | Pandas, NumPy |
 | **Machine Learning** | Scikit-learn (Logistic Regression, Random Forest) |
-| **Visualization** | Matplotlib, Seaborn |
-| **Framework** | PACE (Plan, Analyze, Construct, Execute) |
+| **Visualisation** | Matplotlib, Seaborn |
+| **Framework** | PACE (Plan, Analyse, Construct, Execute) |
 | **Development** | Jupyter Notebook, VS Code |
 
 ---
 
-## Repository Structure
+## Project Structure
 
 ```
-salifort-motors-hr-analytics/
+Salifort-Motors-HR-Analytics/
 │
-├── figures/                          # Generated visualizations
+├── figures/                           # Generated visualisations
 │   ├── burnout_cluster.png
 │   ├── confusion_matrix.png
 │   ├── correlation_heatmap.png
 │   ├── feature_importance.png
 │   └── turnover_by_department.png
 │
-├── hr_turnover_predictor.py          # Production-ready ML pipeline
+├── hr_turnover_predictor.py           # Production-ready ML pipeline
 ├── Salifort_Motors_HR_Analytics.ipynb # Full EDA & analysis notebook
 ├── requirements.txt                   # Python dependencies
 ├── LICENSE                            # MIT License
 ├── .gitignore                         # Git ignore rules
-└── README.md                          # This file
+└── README.md
 ```
-
-### File Descriptions
-
-| File | Description |
-|------|-------------|
-| [`hr_turnover_predictor.py`](hr_turnover_predictor.py) | Production-ready Python script with modular classes for data processing, model training, and visualization. Run this to reproduce all results. |
-| [`Salifort_Motors_HR_Analytics.ipynb`](Salifort_Motors_HR_Analytics.ipynb) | Jupyter notebook containing the complete PACE analysis, EDA visualizations, and model development process. |
-| [`requirements.txt`](requirements.txt) | Python package dependencies for reproducing the environment. |
-| [`figures/`](figures/) | All generated visualizations used in this README and for presentations. |
 
 ---
 
-## Getting Started
+## How to Run
 
 ### Prerequisites
+
 - Python 3.8 or higher
 - pip package manager
 
@@ -177,8 +170,8 @@ salifort-motors-hr-analytics/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/salifort-motors-hr-analytics.git
-   cd salifort-motors-hr-analytics
+   git clone https://github.com/KyleWareEng/Salifort-Motors-HR-Analytics.git
+   cd Salifort-Motors-HR-Analytics
    ```
 
 2. **Install dependencies:**
@@ -188,7 +181,6 @@ salifort-motors-hr-analytics/
 
 3. **Run the analysis:**
    ```bash
-   # Run the production pipeline (requires HR_capstone_dataset.csv)
    python hr_turnover_predictor.py
    ```
 
@@ -197,42 +189,49 @@ salifort-motors-hr-analytics/
 
 ### Data
 
-The dataset used in this project is from [Kaggle's HR Analytics dataset](https://www.kaggle.com/datasets/mfaisalqureshi/hr-analytics-and-job-prediction). Place the CSV file in the same directory as the script to run the pipeline.
+The dataset is from [Kaggle's HR Analytics dataset](https://www.kaggle.com/datasets/mfaisalqureshi/hr-analytics-and-job-prediction). Place the CSV file in the project directory to run the pipeline.
 
 ---
 
 ## AI-Augmented Workflow
 
-This project utilized an **AI-augmented development workflow** to enhance productivity:
+This project utilised an **AI-augmented development workflow** to enhance productivity:
 
 - **Code Refactoring:** Transformed raw Jupyter notebook code into production-ready, modular Python classes
 - **Documentation:** AI-assisted generation of comprehensive docstrings and README content
-- **Debugging:** Leveraged AI for troubleshooting complex syntax and optimizing visualizations
+- **Debugging:** Leveraged AI for troubleshooting complex syntax and optimising visualisations
 - **Best Practices:** Applied clean code principles including type hints, logging, and error handling
 
 This approach demonstrates proficiency in leveraging modern AI tools to accelerate data science workflows while maintaining code quality.
 
 ---
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## Acknowledgments
 
-- **[Google Advanced Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-advanced-data-analytics)** - This capstone project was completed as the final requirement for the 7-course certificate program, which covers foundations of data science, statistics, Python, regression analysis, and machine learning. [View my certificate](https://www.coursera.org/account/accomplishments/professional-cert/4TAGPANB8CD8)
-- **Kaggle** - For providing the HR Analytics dataset
+- **[Google Advanced Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-advanced-data-analytics)** - Capstone project for the 7-course certificate program. [Verify my certificate](https://www.coursera.org/account/accomplishments/professional-cert/4TAGPANB8CD8)
+- **Kaggle** - HR Analytics dataset
 - **Anthropic Claude** - AI assistance for code refactoring and documentation
 
 ---
 
-## Connect
+## License
 
-**Kyle Ware**  
-*Aspiring Data Scientist | Machine Learning Enthusiast*
+MIT License - see [LICENSE](LICENSE) for details.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/kyleaware)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/KyleWareEng)
+---
+
+## Contact
+
+**Kyle Ware**
+
+- Email: kyle.ware@outlook.com
+- LinkedIn: [linkedin.com/in/kyleaware](https://linkedin.com/in/kyleaware)
+- GitHub: [github.com/KyleWareEng](https://github.com/KyleWareEng)
+- MEng Automotive Engineering | Data Science & Quantitative Finance
+
+Feel free to reach out if you have questions about this project!
+
+---
+
+*Google Advanced Data Analytics Capstone | January 2026*
 
